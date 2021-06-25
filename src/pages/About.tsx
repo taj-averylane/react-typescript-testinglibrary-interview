@@ -12,9 +12,9 @@ const About: React.FC<RouteComponentProps> = (): JSX.Element => {
   return (
     <section>
       <>
-        <h1>About Page</h1>
-        <button onClick={() => dispatch(incrementOne)}>Increment</button>
-        <p>Current Count: {counter}</p>
+        <h1 data-testid="aboutPage">About Page</h1>
+        <button data-testid="incrementbtn" onClick={() => dispatch(incrementOne)}>Increment</button>
+        <p data-testid="counter">Current Count: {counter}</p>
       </>
     </section>
   );
